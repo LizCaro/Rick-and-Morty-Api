@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+}
+
+.search__container {
+    font-family: var(--primary-font);
+    position: relative;
+    background-color: #f2f2f2;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search__container h1 {
+    font-weight: 800;
+    font-size: 2.6rem;
+}
+
+.search__input {
+    transition: left .3s ease-in-out;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(6, 21, 46);
+    padding: 10px;
+    color: #f2f2f2;
+}
+.search__input form {
+    padding: 10px;
+}
+
+.search__icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .search__icon {
+        top: 2rem;
+        left: 2rem;
+    }
+    .search__input {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(6, 21, 46);
+        padding: 10px;
+    }
+}
+
